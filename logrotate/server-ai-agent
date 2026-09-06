@@ -1,0 +1,11 @@
+\
+/var/log/server-ai-agent/agent.log {
+    daily
+    rotate 14
+    compress
+    delaycompress
+    missingok
+    notifempty
+    copytruncate
+    su server-agent server-agent
+}
